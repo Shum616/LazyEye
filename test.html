@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LazyEye Test</title>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./app/css/normalize.css" />
+    <link rel="stylesheet" href="./app/css/style.css" />
+    <link rel="stylesheet" href="./app/css/main.css">
+    <link rel="stylesheet" type="css" href="./app/css/demo.css" />
+    <link rel="stylesheet" type="css" href="./app/css/custom.css" />
+    <script type="text/javascript" src="app/js/test.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Lazy eye</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Main</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="test.html" class="nav__link active-link">Test your eyes</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="support.html" class="nav__link">Support</a>
+                    </li>
+
+                    <li>
+                        <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="prolog">
+        <div class="ent_text">
+            <h1 class="color_1">Welcome to LazyEye</h1>
+            <h2 class="color_1">Color Blind Test</h2>
+            <h3 class="color_1">If you have color blindness, our test can tell you if your color vision deficiency </h3>
+            <h3 class="color_1">is mild, moderate, or strong — in less than two minutes.</h3>
+        </div>
+        <div class="ent_img">
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <h1 class="h1">Enter number that you see on image</h1>
+
+    <a href="#answer1">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/1.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form1_answer(1)">1</div>
+                <div class="button_1" onclick="Form1_answer(2)">2</div>
+                <div class="button_1" onclick="Form1_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form1_answer(4)">4</div>
+                <div class="button_1" onclick="Form1_answer(5)">5</div>
+                <div class="button_1" onclick="Form1_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form1_answer(7)">7</div>
+                <div class="button_1" onclick="Form1_answer(8)">8</div>
+                <div class="button_1" onclick="Form1_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form1_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form1_answer(0)">0</div>
+                <div class="button_1" onclick="Form1_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer1">Your answer is:</label>
+            <p id="answer1">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer2">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/2.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form2_answer(1)">1</div>
+                <div class="button_1" onclick="Form2_answer(2)">2</div>
+                <div class="button_1" onclick="Form2_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form2_answer(4)">4</div>
+                <div class="button_1" onclick="Form2_answer(5)">5</div>
+                <div class="button_1" onclick="Form2_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form2_answer(7)">7</div>
+                <div class="button_1" onclick="Form2_answer(8)">8</div>
+                <div class="button_1" onclick="Form2_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form2_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form2_answer(0)">0</div>
+                <div class="button_1" onclick="Form2_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer2">Your answer is:</label>
+            <p id="answer2">&nbsp;</p>
+        </div>
+    </a>
+
+
+    <a href="#answer3">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/3.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form3_answer(1)">1</div>
+                <div class="button_1" onclick="Form3_answer(2)">2</div>
+                <div class="button_1" onclick="Form3_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form3_answer(4)">4</div>
+                <div class="button_1" onclick="Form3_answer(5)">5</div>
+                <div class="button_1" onclick="Form3_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form3_answer(7)">7</div>
+                <div class="button_1" onclick="Form3_answer(8)">8</div>
+                <div class="button_1" onclick="Form3_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form3_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form3_answer(0)">0</div>
+                <div class="button_1" onclick="Form3_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer3">Your answer is:</label>
+            <p id="answer3">&nbsp;</p>
+        </div>
+    </a>
+
+
+
+    <a href="#answer4">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/4.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form4_answer(1)">1</div>
+                <div class="button_1" onclick="Form4_answer(2)">2</div>
+                <div class="button_1" onclick="Form4_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form4_answer(4)">4</div>
+                <div class="button_1" onclick="Form4_answer(5)">5</div>
+                <div class="button_1" onclick="Form4_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form4_answer(7)">7</div>
+                <div class="button_1" onclick="Form4_answer(8)">8</div>
+                <div class="button_1" onclick="Form4_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form4_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form4_answer(0)">0</div>
+                <div class="button_1" onclick="Form4_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer">Your answer is:</label>
+            <p id="answer4">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer5">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/5.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form5_answer(1)">1</div>
+                <div class="button_1" onclick="Form5_answer(2)">2</div>
+                <div class="button_1" onclick="Form5_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form5_answer(4)">4</div>
+                <div class="button_1" onclick="Form5_answer(5)">5</div>
+                <div class="button_1" onclick="Form5_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form5_answer(7)">7</div>
+                <div class="button_1" onclick="Form5_answer(8)">8</div>
+                <div class="button_1" onclick="Form5_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form5_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form5_answer(0)">0</div>
+                <div class="button_1" onclick="Form5_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer5">Your answer is:</label>
+            <p id="answer5">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer6">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/6.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form6_answer(1)">1</div>
+                <div class="button_1" onclick="Form6_answer(2)">2</div>
+                <div class="button_1" onclick="Form6_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form6_answer(4)">4</div>
+                <div class="button_1" onclick="Form6_answer(5)">5</div>
+                <div class="button_1" onclick="Form6_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form6_answer(7)">7</div>
+                <div class="button_1" onclick="Form6_answer(8)">8</div>
+                <div class="button_1" onclick="Form6_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form6_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form6_answer(0)">0</div>
+                <div class="button_1" onclick="Form6_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer6">Your answer is:</label>
+            <p id="answer6">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer7">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/7.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form7_answer(1)">1</div>
+                <div class="button_1" onclick="Form7_answer(2)">2</div>
+                <div class="button_1" onclick="Form7_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form7_answer(4)">4</div>
+                <div class="button_1" onclick="Form7_answer(5)">5</div>
+                <div class="button_1" onclick="Form7_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form7_answer(7)">7</div>
+                <div class="button_1" onclick="Form7_answer(8)">8</div>
+                <div class="button_1" onclick="Form7_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form7_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form7_answer(0)">0</div>
+                <div class="button_1" onclick="Form7_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer7">Your answer is:</label>
+            <p id="answer7">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer8">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/8.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form8_answer(1)">1</div>
+                <div class="button_1" onclick="Form8_answer(2)">2</div>
+                <div class="button_1" onclick="Form8_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form8_answer(4)">4</div>
+                <div class="button_1" onclick="Form8_answer(5)">5</div>
+                <div class="button_1" onclick="Form8_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form8_answer(7)">7</div>
+                <div class="button_1" onclick="Form8_answer(8)">8</div>
+                <div class="button_1" onclick="Form8_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form8_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form8_answer(0)">0</div>
+                <div class="button_1" onclick="Form8_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer8">Your answer is:</label>
+            <p id="answer8">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer9">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/9.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form9_answer(1)">1</div>
+                <div class="button_1" onclick="Form9_answer(2)">2</div>
+                <div class="button_1" onclick="Form9_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form9_answer(4)">4</div>
+                <div class="button_1" onclick="Form9_answer(5)">5</div>
+                <div class="button_1" onclick="Form9_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form9_answer(7)">7</div>
+                <div class="button_1" onclick="Form9_answer(8)">8</div>
+                <div class="button_1" onclick="Form9_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form9_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form9_answer(0)">0</div>
+                <div class="button_1" onclick="Form9_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer9">Your answer is:</label>
+            <p id="answer9">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer10">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/10.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form10_answer(1)">1</div>
+                <div class="button_1" onclick="Form10_answer(2)">2</div>
+                <div class="button_1" onclick="Form10_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form10_answer(4)">4</div>
+                <div class="button_1" onclick="Form10_answer(5)">5</div>
+                <div class="button_1" onclick="Form10_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form10_answer(7)">7</div>
+                <div class="button_1" onclick="Form10_answer(8)">8</div>
+                <div class="button_1" onclick="Form10_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form10_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form10_answer(0)">0</div>
+                <div class="button_1" onclick="Form10_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer10">Your answer is:</label>
+            <p id="answer10">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer11">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/11.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form11_answer(1)">1</div>
+                <div class="button_1" onclick="Form11_answer(2)">2</div>
+                <div class="button_1" onclick="Form11_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form11_answer(4)">4</div>
+                <div class="button_1" onclick="Form11_answer(5)">5</div>
+                <div class="button_1" onclick="Form11_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form11_answer(7)">7</div>
+                <div class="button_1" onclick="Form11_answer(8)">8</div>
+                <div class="button_1" onclick="Form11_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form11_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form11_answer(0)">0</div>
+                <div class="button_1" onclick="Form11_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer11">Your answer is:</label>
+            <p id="answer11">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer12">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/12.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form12_answer(1)">1</div>
+                <div class="button_1" onclick="Form12_answer(2)">2</div>
+                <div class="button_1" onclick="Form12_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form12_answer(4)">4</div>
+                <div class="button_1" onclick="Form12_answer(5)">5</div>
+                <div class="button_1" onclick="Form12_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form12_answer(7)">7</div>
+                <div class="button_1" onclick="Form12_answer(8)">8</div>
+                <div class="button_1" onclick="Form12_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form12_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form12_answer(0)">0</div>
+                <div class="button_1" onclick="Form12_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer12">Your answer is:</label>
+            <p id="answer12">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer13">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/13.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form13_answer(1)">1</div>
+                <div class="button_1" onclick="Form13_answer(2)">2</div>
+                <div class="button_1" onclick="Form13_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form13_answer(4)">4</div>
+                <div class="button_1" onclick="Form13_answer(5)">5</div>
+                <div class="button_1" onclick="Form13_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form13_answer(7)">7</div>
+                <div class="button_1" onclick="Form13_answer(8)">8</div>
+                <div class="button_1" onclick="Form13_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form13_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form13_answer(0)">0</div>
+                <div class="button_1" onclick="Form13_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer13">Your answer is:</label>
+            <p id="answer13">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer14">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/14.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form14_answer(1)">1</div>
+                <div class="button_1" onclick="Form14_answer(2)">2</div>
+                <div class="button_1" onclick="Form14_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form14_answer(4)">4</div>
+                <div class="button_1" onclick="Form14_answer(5)">5</div>
+                <div class="button_1" onclick="Form14_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form14_answer(7)">7</div>
+                <div class="button_1" onclick="Form14_answer(8)">8</div>
+                <div class="button_1" onclick="Form14_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form14_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form14_answer(0)">0</div>
+                <div class="button_1" onclick="Form14_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer14">Your answer is:</label>
+            <p id="answer14">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer15">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/15.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form15_answer(1)">1</div>
+                <div class="button_1" onclick="Form15_answer(2)">2</div>
+                <div class="button_1" onclick="Form15_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form15_answer(4)">4</div>
+                <div class="button_1" onclick="Form15_answer(5)">5</div>
+                <div class="button_1" onclick="Form15_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form15_answer(7)">7</div>
+                <div class="button_1" onclick="Form15_answer(8)">8</div>
+                <div class="button_1" onclick="Form15_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form15_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form15_answer(0)">0</div>
+                <div class="button_1" onclick="Form15_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer15">Your answer is:</label>
+            <p id="answer15">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer16">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/16.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form16_answer(1)">1</div>
+                <div class="button_1" onclick="Form16_answer(2)">2</div>
+                <div class="button_1" onclick="Form16_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form16_answer(4)">4</div>
+                <div class="button_1" onclick="Form16_answer(5)">5</div>
+                <div class="button_1" onclick="Form16_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form16_answer(7)">7</div>
+                <div class="button_1" onclick="Form16_answer(8)">8</div>
+                <div class="button_1" onclick="Form16_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form16_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form16_answer(0)">0</div>
+                <div class="button_1" onclick="Form16_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer16">Your answer is:</label>
+            <p id="answer16">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer17">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/17.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form17_answer(1)">1</div>
+                <div class="button_1" onclick="Form17_answer(2)">2</div>
+                <div class="button_1" onclick="Form17_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form17_answer(4)">4</div>
+                <div class="button_1" onclick="Form17_answer(5)">5</div>
+                <div class="button_1" onclick="Form17_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form17_answer(7)">7</div>
+                <div class="button_1" onclick="Form17_answer(8)">8</div>
+                <div class="button_1" onclick="Form17_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form17_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form17_answer(0)">0</div>
+                <div class="button_1" onclick="Form17_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer17">Your answer is:</label>
+            <p id="answer17">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer18">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/18.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form18_answer(1)">1</div>
+                <div class="button_1" onclick="Form18_answer(2)">2</div>
+                <div class="button_1" onclick="Form18_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form18_answer(4)">4</div>
+                <div class="button_1" onclick="Form18_answer(5)">5</div>
+                <div class="button_1" onclick="Form18_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form18_answer(7)">7</div>
+                <div class="button_1" onclick="Form18_answer(8)">8</div>
+                <div class="button_1" onclick="Form18_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form18_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form18_answer(0)">0</div>
+                <div class="button_1" onclick="Form18_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer18">Your answer is:</label>
+            <p id="answer18">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer19">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/19.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form19_answer(1)">1</div>
+                <div class="button_1" onclick="Form19_answer(2)">2</div>
+                <div class="button_1" onclick="Form19_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form19_answer(4)">4</div>
+                <div class="button_1" onclick="Form19_answer(5)">5</div>
+                <div class="button_1" onclick="Form19_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form19_answer(7)">7</div>
+                <div class="button_1" onclick="Form19_answer(8)">8</div>
+                <div class="button_1" onclick="Form19_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form19_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form19_answer(0)">0</div>
+                <div class="button_1" onclick="Form19_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer19">Your answer is:</label>
+            <p id="answer19">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer20">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/20.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form20_answer(1)">1</div>
+                <div class="button_1" onclick="Form20_answer(2)">2</div>
+                <div class="button_1" onclick="Form20_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form20_answer(4)">4</div>
+                <div class="button_1" onclick="Form20_answer(5)">5</div>
+                <div class="button_1" onclick="Form20_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form20_answer(7)">7</div>
+                <div class="button_1" onclick="Form20_answer(8)">8</div>
+                <div class="button_1" onclick="Form20_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form20_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form20_answer(0)">0</div>
+                <div class="button_1" onclick="Form20_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer20">Your answer is:</label>
+            <p id="answer20">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer21">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/21.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form21_answer(1)">1</div>
+                <div class="button_1" onclick="Form21_answer(2)">2</div>
+                <div class="button_1" onclick="Form21_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form21_answer(4)">4</div>
+                <div class="button_1" onclick="Form21_answer(5)">5</div>
+                <div class="button_1" onclick="Form21_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form21_answer(7)">7</div>
+                <div class="button_1" onclick="Form21_answer(8)">8</div>
+                <div class="button_1" onclick="Form21_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form21_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form21_answer(0)">0</div>
+                <div class="button_1" onclick="Form21_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer21">Your answer is:</label>
+            <p id="answer21">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer22">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/22.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form22_answer(1)">1</div>
+                <div class="button_1" onclick="Form22_answer(2)">2</div>
+                <div class="button_1" onclick="Form22_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form22_answer(4)">4</div>
+                <div class="button_1" onclick="Form22_answer(5)">5</div>
+                <div class="button_1" onclick="Form22_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form22_answer(7)">7</div>
+                <div class="button_1" onclick="Form22_answer(8)">8</div>
+                <div class="button_1" onclick="Form22_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form22_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form22_answer(0)">0</div>
+                <div class="button_1" onclick="Form22_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer22">Your answer is:</label>
+            <p id="answer22">&nbsp;</p>
+        </div>
+    </a>
+
+    <a href="#answer23">
+        <div class="box">
+            <div class="polaroid">
+                <img src="app/img/23.jpg" class="datl" />
+            </div>
+            <div id="grid">
+                <div class="button_1" onclick="Form23_answer(1)">1</div>
+                <div class="button_1" onclick="Form23_answer(2)">2</div>
+                <div class="button_1" onclick="Form23_answer(3)">3</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form23_answer(4)">4</div>
+                <div class="button_1" onclick="Form23_answer(5)">5</div>
+                <div class="button_1" onclick="Form23_answer(6)">6</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form23_answer(7)">7</div>
+                <div class="button_1" onclick="Form23_answer(8)">8</div>
+                <div class="button_1" onclick="Form23_answer(9)">9</div>
+                <br>
+                <br>
+                <div class="button_1" onclick="Form23_answer('nothing')">
+                    nothing
+                </div>
+                <div class="button_1" onclick="Form23_answer(0)">0</div>
+                <div class="button_1" onclick="Form23_answer('not sure')">
+                    not sure
+                </div>
+            </div>
+        </div>
+        <div class="ans_container">
+            <label for="answer23">Your answer is:</label>
+            <p id="answer23">&nbsp;</p>
+        </div>
+    </a>
+    <br>
+    <br>
+    <br>
+
+    <div class="lastButton">
+        <div class="ResultButton" onclick="Result()">Get The Results!</div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="#" class="footer__logo">See your life</a>
+                </h3>
+                <p class="footer__description">
+                    You you deserve it <br>
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul>
+                    <li><a href="test.html" class="footer__link">Test</a></li>
+                    <li><a href="index.html" class="footer__link">App</a></li>
+                    <li><a href="blog.html" class="footer__link">Bonuses</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul>
+                    <li><a href="blog.html" class="footer__link">Blog</a></li>
+                    <li><a href="index.html" class="footer__link">About us</a></li>
+                    <li><a href="support.html" class="footer__link">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <a href="#" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">
+            &#169; 2021
+            <a style="color: #c42130" href="https://lpnu.ua/">lpnu</a>. All right reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./app/js/main.js"></script>
+    <script src="./app/js/modal.js" type="module"></script>
+
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

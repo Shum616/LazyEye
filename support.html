@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LazyEye Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./app/css/normalize.css" />
+    <link rel="stylesheet" href="./app/css/style.css" />
+    <link rel="stylesheet" href="./app/css/main.css">
+    <link rel="stylesheet" type="css" href="./app/css/demo.css" />
+    <link rel="stylesheet" type="css" href="./app/css/custom.css" />
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Lazy eye</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Main</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="test.html" class="nav__link">Test your eyes</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="support.html" class="nav__link active-link">Support</a>
+                    </li>
+
+                    <li>
+                        <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="limiter">
+        <div class="img__container">
+            <img src="https://images.pexels.com/photos/1407155/pexels-photo-1407155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img__img">
+        </div>
+
+        <div class="container-login100">
+            <div class="login100-more"></div>
+
+            <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title p-b-59">
+                        <h1>Feedback</h1> <br><br>
+                    </span>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">
+                            <h1>Full Name</h1>
+                        </span>
+                        <input class="input100" type="text" name="name" placeholder="Name...">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">
+                            <h1>Email</h1>
+                        </span>
+                        <input class="input100" type="text" id="email" placeholder="Email addess...">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">
+                            <h1>Bug report, problem or comment</h1>
+                        </span>
+                        <input class="input100" type="text" name="username" placeholder="Leave comment...">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">
+                            <h1>Suggestions</h1>
+                        </span>
+                        <input class="input100" type="text" name="pass" placeholder="Write here">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <br>
+                    <br>
+                    <button class="button_1" onclick="validateEmail()">
+                        Send
+                    </button>
+                    <script src="app/js/validate.js"></script>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="#" class="footer__logo">See your life</a>
+                </h3>
+                <p class="footer__description">
+                    You you deserve it <br>
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul>
+                    <li><a href="test.html" class="footer__link">Test</a></li>
+                    <li><a href="index.html" class="footer__link">App</a></li>
+                    <li><a href="blog.html" class="footer__link">Bonuses</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul>
+                    <li><a href="blog.html" class="footer__link">Blog</a></li>
+                    <li><a href="index.html" class="footer__link">About us</a></li>
+                    <li><a href="support.html" class="footer__link">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <a href="#" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">
+            &#169; 2021
+            <a style="color: #c42130" href="https://lpnu.ua/">lpnu</a>. All right reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./app/js/main.js"></script>
+    <script src="./app/js/modal.js" type="module"></script>
+
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

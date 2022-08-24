@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LazyEye Main</title>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./app/css/normalize.css" />
+    <link rel="stylesheet" href="./app/css/style.css" />
+    <link rel="stylesheet" href="./app/css/main.css">
+    <link rel="stylesheet" type="css" href="./app/css/demo.css" />
+    <link rel="stylesheet" type="css" href="./app/css/custom.css" />
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div class="flex_eye">
+        <div class="container">
+            <div class="ball">
+                <div class="iris" id="iris" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0%, rgba(0, 0, 0, 0)"></div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+
+    <script src="./app/js/jscolor.js"></script>
+    <p class="flex">
+        <button data-jscolor="{value:'#9933CC', position:'bottom', height:80, backgroundColor:'#333',
+                          onInput: 'update(this, \'#iris\')'}">
+            Colour!&nbsp;&nbsp;&nbsp;&nbsp;
+        </button>
+    </p>
+
+    <script src="./app/js/script.js"></script>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Lazy eye</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Main</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="test.html" class="nav__link">Test your eyes</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="support.html" class="nav__link">Support</a>
+                    </li>
+
+                    <li>
+                        <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <section class="head_1">
+            <p id="head_1">See your life better</p>
+        </section>
+
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__img">
+                    <img src="https://i.pinimg.com/originals/94/59/e8/9459e809cc62dee058762cd42f303745.jpg" alt="" class="home__img">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Wordl in your eyes</h1>
+                    <p class="home__description">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We’re so used to gadgets that we don’t part with them at work or at home anymore.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But apart from the traditional ways of vision correction, there are an apps to help you take control of your “unlimited” digital life and make time for your eyes.
+                    </p>
+                    <a class="button" id="getStarted" data-action="open-modal">Get Started</a>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1 class="sorry">Sorry!</h1>
+                    <h2 class="sorry">Our app is only on the stage of development!</h2>
+                </div>
+
+            </div>
+
+            <script src="app/js/modal.js"></script>
+        </section>
+
+        <!--========== SHARE ==========-->
+        <section class="share section bd-container" id="share">
+            <div class="share__container bd-grid">
+                <div class="share__data">
+                    <h2 class="section-title-center">
+                        What We Offer
+                    </h2>
+                    <p class="share__description">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The brain is an incredible organ that has the ability to be trained and developed to improve its performance. <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vision training and daily eye exercises in one sleek and fun package. Developed with the help of eye care professionals, our eye exercises are based on the most proven techniques in ophthalmology and utilize brain training algorithms to get you seeing the world better, sooner!
+
+                    </p>
+                    <a href="#" class="button">Get a Gift</a>
+                </div>
+
+                <div class="share__img">
+                    <img src="./app/img/gift.png" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <!--========== DECORATION ==========-->
+        <section class="decoration section bd-container" id="decoration">
+            <h2 class="section-title">
+                Training Tips
+            </h2>
+            <div class="decoration__container bd-grid">
+                <div class="decoration__data">
+                    <img src="./app/img/timer.png" alt="" class="decoration__img" />
+                    <h3 class="decoration__title">
+                        Train with app at least 3X per week. <br>
+                        For best results 3 times per week is the recommended training frequency. Training once a day is even better!</h3>
+                    <a href="test.html" class="button button-link">Start Training</a>
+                </div>
+
+                <div class="decoration__data">
+                    <img src="./app/img/battery.png" alt="" class="decoration__img" />
+                    <h3 class="decoration__title">
+                        Train when you're alert and not tired. <br>
+                        The more alert you are during your training session, the better it is. Avoid training when you are fatigued.</h3>
+                    <a href="test.html" class="button button-link">Start Training</a>
+                </div>
+            </div>
+            <br>
+            <div class="decoration__container bd-grid">
+                <div class="decoration__data">
+                    <img src="./app/img/light_bulb.png" alt="" class="decoration__img" />
+                    <h3 class="decoration__title">
+                        Train under dim lighting condition. <br>
+                        It is not necessary for the room to be pitch-black, just make sure there are no strong surrounding lights.</h3>
+                    <a href="test.html" class="button button-link">Start Training</a>
+                </div>
+                <div class="decoration__data">
+                    <img src="./app/img/ruler.png" alt="" class="decoration__img" />
+                    <h3 class="decoration__title">
+                        Hold the device 15 in. (40cm) from your eyes. <br>
+                        Users frequently don't pay attention and train with the device too far from their eyes... watch out!
+                    </h3>
+                    <a href="test.html" class="button button-link">Start Training</a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== ACCESSORIES ==========-->
+        <div class="head_3">
+            <section class="accessory section bd-container" id="accessory">
+                <h2 class="section-title" id="head_3">
+                    See something new
+                </h2>
+                <a href="blog.html">
+                    <div class="accessory__container bd-grid">
+                        <p class="accessory__content">
+                            The eyes are a mirror of human health and diseases
+                        </p>
+                        <p class="accessory__content">
+                            How to protect eye health and what to know?
+                        </p>
+                        <p class="accessory__content">
+                            What the eyes will tell about the state of health?
+                        </p>
+                        <p class="accessory__content">
+                            The eyes are an amazing and complex organ
+                        </p>
+                        <p class="accessory__content">
+                            Myopia
+                        </p>
+                        <p class="accessory__content">
+                            Hypermetropia
+                        </p>
+                        <p class="accessory__content">
+                            Heterochromia
+                        </p>
+                        <p class="accessory__content">
+                            Tritanopia – Blue-Yellow Color Blindness
+                        </p>
+                        <p class="accessory__content">
+                            Color blindness (color vision deficiency)
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </section>
+        </div>
+
+        <!--========== SEND GIFT ==========-->
+        <section class="send section">
+            <div class="send__container bd-container bd-grid">
+                <div class="send__content">
+                    <h2 class="section-title-center send__title">Give feedback</h2>
+                    <p class="send__description">
+                        We will be glad to hear your suggestions, comments or ideas ^_^.
+                    </p>
+                    <form action="">
+                        <div class="send__direction">
+                            <input type="text" placeholder="E-mail address" class="send__input" />
+                            <a href="support.html" class="button">Send</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="send__img">
+                    <img src="./app/img/logo.png" alt="" id="logo" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="#" class="footer__logo">See your life</a>
+                </h3>
+                <p class="footer__description">
+                    You you deserve it <br>
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul>
+                    <li><a href="test.html" class="footer__link">Test</a></li>
+                    <li><a href="index.html" class="footer__link">App</a></li>
+                    <li><a href="blog.html" class="footer__link">Bonuses</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul>
+                    <li><a href="blog.html" class="footer__link">Blog</a></li>
+                    <li><a href="index.html" class="footer__link">About us</a></li>
+                    <li><a href="support.html" class="footer__link">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <a href="#" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">
+            &#169; 2021
+            <a style="color: #c42130" href="https://lpnu.ua/">lpnu</a>. All right reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./app/js/main.js"></script>
+    <script src="./app/js/modal.js" type="module"></script>
+
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
